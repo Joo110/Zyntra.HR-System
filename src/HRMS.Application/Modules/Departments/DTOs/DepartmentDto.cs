@@ -1,0 +1,4 @@
+namespace HRMS.Application.Modules.Departments.DTOs;
+public class DepartmentDto { public Guid Id { get; set; } public string Code { get; set; } = string.Empty; public string Name { get; set; } = string.Empty; public string? Description { get; set; } public Guid? ParentDepartmentId { get; set; } public string? ParentDepartmentName { get; set; } public Guid? ManagerId { get; set; } public bool IsActive { get; set; } public int EmployeeCount { get; set; } public DateTime CreatedAt { get; set; } }
+public class CreateDepartmentDto { public string Code { get; set; } = string.Empty; public string Name { get; set; } = string.Empty; public string? Description { get; set; } public Guid? ParentDepartmentId { get; set; } public Guid? ManagerId { get; set; } }
+public class UpdateDepartmentDto : CreateDepartmentDto { public Guid Id { get; set; } public bool IsActive { get; set; } }

@@ -1,0 +1,3 @@
+using HRMS.Domain.Enums;
+namespace HRMS.Application.Modules.AuditLogs.DTOs;
+public class AuditLogDto { public Guid Id { get; set; } public string? UserId { get; set; } public string? UserName { get; set; } public AuditAction Action { get; set; } public string EntityName { get; set; } = string.Empty; public string? EntityId { get; set; } public string? OldValues { get; set; } public string? NewValues { get; set; } public string? IpAddress { get; set; } public string? Browser { get; set; } public DateTime Timestamp { get; set; } public bool IsSuccess { get; set; } public string? ErrorMessage { get; set; } }

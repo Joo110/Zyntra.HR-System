@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  hrms-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "7001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=hrms-db;Database=HrmsDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=true
+      - Jwt__Key=HRMSSecretKey2024!@#VeryLongAndSecureJwtSigningKey
+      - Jwt__Issuer=HRMS
+      - Jwt__Audience=HRMS-Users
+    depends_on:
+      - hrms-db
+
+  hrms-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - SA_PASSWORD=YourStrong!Passw0rd
+      - ACCEPT_EULA=Y
+    ports:
+      - "1433:1433"
+    volumes:
+      - hrms_data:/var/opt/mssql
+
+volumes:
+  hrms_data:

@@ -1,0 +1,5 @@
+using HRMS.Domain.Enums;
+namespace HRMS.Application.Modules.Payroll.DTOs;
+public class PayrollBatchDto { public Guid Id { get; set; } public string BatchCode { get; set; } = string.Empty; public int Month { get; set; } public int Year { get; set; } public PayrollStatus Status { get; set; } public decimal TotalGross { get; set; } public decimal TotalDeductions { get; set; } public decimal TotalNet { get; set; } public DateTime CreatedAt { get; set; } }
+public class PayslipDto { public Guid Id { get; set; } public Guid EmployeeId { get; set; } public string? EmployeeName { get; set; } public Guid PayrollBatchId { get; set; } public int Month { get; set; } public int Year { get; set; } public decimal BasicSalary { get; set; } public decimal TotalAllowances { get; set; } public decimal TotalDeductions { get; set; } public decimal TaxAmount { get; set; } public decimal NetSalary { get; set; } public PayrollStatus Status { get; set; } public DateTime CreatedAt { get; set; } }
+public class CreatePayrollBatchDto { public int Month { get; set; } public int Year { get; set; } public string? Notes { get; set; } }
