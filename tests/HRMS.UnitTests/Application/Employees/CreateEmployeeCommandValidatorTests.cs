@@ -1,12 +1,25 @@
-using HRMS.Application.Modules.Employees.Commands.CreateEmployee;
-using HRMS.Domain.Enums;
 using FluentAssertions;
 using FluentValidation.TestHelper;
+using HRMS.Application.Common.Interfaces;
+using HRMS.Application.Modules.Employees.Commands.CreateEmployee;
+using HRMS.Domain.Enums;
 using Xunit;
 namespace HRMS.UnitTests.Application.Employees;
 public class CreateEmployeeCommandValidatorTests
 {
-    private readonly CreateEmployeeCommandValidator _validator = new();
+    private ILocalizationService _localizer;
+
+    public CreateEmployeeCommandValidatorTests(ILocalizationService localizer)
+    {
+        _localizer = localizer;
+    }
+
+    private readonly CreateEmployeeCommandValidator _validator;
+
+    public CreateEmployeeCommandValidatorTests(CreateEmployeeCommandValidator validator)
+    {
+        _validator = validator;
+    }
 
     [Fact]
     public void Validate_ShouldFail_WhenFirstNameIsEmpty()

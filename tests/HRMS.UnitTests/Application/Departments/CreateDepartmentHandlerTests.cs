@@ -14,7 +14,7 @@ public class CreateDepartmentHandlerTests
     private readonly Mock<IUnitOfWork> _uowMock = new();
     private readonly Mock<IRepository<Department>> _repoMock = new();
     private readonly IMapper _mapper;
-    private IStringLocalizer<SharedResource> _localizer;
+    private  ILocalizationService _localizer; 
 
     public CreateDepartmentHandlerTests()
     {
