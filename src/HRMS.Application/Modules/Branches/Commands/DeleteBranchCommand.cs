@@ -1,14 +1,24 @@
-using MediatR; using HRMS.Application.Common.Interfaces; using HRMS.Domain.Entities; using HRMS.Shared.Models;
+using HRMS.Application.Common.Interfaces;
+using HRMS.Application.Common.Localization;
+using HRMS.Domain.Entities; 
+using HRMS.Shared.Models;
+using MediatR;
+using Microsoft.Extensions.Localization;
 namespace HRMS.Application.Modules.Branches.Commands.DeleteBranch;
 public record DeleteBranchCommand(Guid Id) : IRequest<Result>;
 public class DeleteBranchCommandHandler : IRequestHandler<DeleteBranchCommand, Result>
 {
     private readonly IUnitOfWork _uow;
-    public DeleteBranchCommandHandler(IUnitOfWork uow) { _uow = uow; }
+    private ILocalizationService _localizer;
+    public DeleteBranchCommandHandler(IUnitOfWork uow, ILocalizationService localizer)
+    {
+        _uow = uow;
+        _localizer = localizer;
+    }
     public async Task<Result> Handle(DeleteBranchCommand request, CancellationToken cancellationToken)
     {
         var b = await _uow.Repository<Branch>().GetByIdAsync(request.Id, cancellationToken);
-        if (b is null) return Result.Failure("Branch not found.");
+        if (b is null) return Result.Failure(_localizer["Branchnotfound"]);
         b.IsDeleted = true; b.DeletedAt = DateTime.UtcNow;
         _uow.Repository<Branch>().Update(b);
         await _uow.SaveChangesAsync(cancellationToken);

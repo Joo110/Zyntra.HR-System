@@ -4,11 +4,16 @@ public record UpdateDepartmentCommand(Guid Id, string Code, string Name, string?
 public class UpdateDepartmentCommandHandler : IRequestHandler<UpdateDepartmentCommand, Result<DepartmentDto>>
 {
     private readonly IUnitOfWork _uow; private readonly IMapper _mapper;
-    public UpdateDepartmentCommandHandler(IUnitOfWork uow, IMapper mapper) { _uow = uow; _mapper = mapper; }
+    private ILocalizationService _localizer;
+    public UpdateDepartmentCommandHandler(IUnitOfWork uow, IMapper mapper, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper;
+        _localizer = localizer;
+    }
     public async Task<Result<DepartmentDto>> Handle(UpdateDepartmentCommand request, CancellationToken cancellationToken)
     {
         var dept = await _uow.Repository<Department>().GetByIdAsync(request.Id, cancellationToken);
-        if (dept is null) return Result<DepartmentDto>.Failure($"Department '{request.Id}' not found.");
+        if (dept is null) return Result<DepartmentDto>.Failure(_localizer["Departmentnotfound", request.Id]);
         dept.Code = request.Code; dept.Name = request.Name; dept.Description = request.Description;
         dept.ParentDepartmentId = request.ParentDepartmentId; dept.ManagerId = request.ManagerId; dept.IsActive = request.IsActive;
         dept.UpdatedAt = DateTime.UtcNow;

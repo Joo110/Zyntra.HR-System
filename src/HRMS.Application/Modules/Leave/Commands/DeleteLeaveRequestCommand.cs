@@ -4,11 +4,16 @@ public record DeleteLeaveRequestCommand(Guid Id) : IRequest<Result>;
 public class DeleteLeaveRequestCommandHandler : IRequestHandler<DeleteLeaveRequestCommand, Result>
 {
     private readonly IUnitOfWork _uow;
-    public DeleteLeaveRequestCommandHandler(IUnitOfWork uow) { _uow = uow; }
+    private ILocalizationService _localizer;
+    public DeleteLeaveRequestCommandHandler(IUnitOfWork uow, ILocalizationService localizer)
+    {
+        _uow = uow;
+        _localizer = localizer;
+    }
     public async Task<Result> Handle(DeleteLeaveRequestCommand request, CancellationToken cancellationToken)
     {
         var leave = await _uow.Repository<LeaveRequest>().GetByIdAsync(request.Id, cancellationToken);
-        if (leave is null) return Result.Failure("Leave request not found.");
+        if (leave is null) return Result.Failure(_localizer["Leaverequestnotfound"]);
         leave.IsDeleted = true; leave.DeletedAt = DateTime.UtcNow;
         _uow.Repository<LeaveRequest>().Update(leave);
         await _uow.SaveChangesAsync(cancellationToken);

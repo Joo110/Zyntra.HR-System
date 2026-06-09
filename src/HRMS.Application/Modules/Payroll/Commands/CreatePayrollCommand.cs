@@ -4,11 +4,18 @@ public record CreatePayrollCommand(int Month, int Year, string? Notes) : IReques
 public class CreatePayrollCommandHandler : IRequestHandler<CreatePayrollCommand, Result<PayrollBatchDto>>
 {
     private readonly IUnitOfWork _uow; private readonly IMapper _mapper;
-    public CreatePayrollCommandHandler(IUnitOfWork uow, IMapper mapper) { _uow = uow; _mapper = mapper; }
+    private ILocalizationService _localizer;
+    public CreatePayrollCommandHandler(IUnitOfWork uow, IMapper mapper, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper;
+        _localizer = localizer;
+    }
     public async Task<Result<PayrollBatchDto>> Handle(CreatePayrollCommand request, CancellationToken cancellationToken)
     {
         var exists = await _uow.Repository<PayrollBatch>().AnyAsync(p => p.Month == request.Month && p.Year == request.Year && !p.IsDeleted, cancellationToken);
-        if (exists) return Result<PayrollBatchDto>.Failure($"Payroll batch for {request.Month}/{request.Year} already exists.");
+        if (exists)
+            return Result<PayrollBatchDto>.Failure(
+                _localizer["PayrollBatchAlreadyExists", request.Month, request.Year]);
         var batch = new PayrollBatch { BatchCode = CodeGenerator.GenerateCode("PAY"), Month = request.Month, Year = request.Year, ProcessedDate = DateTime.UtcNow, Notes = request.Notes };
         await _uow.Repository<PayrollBatch>().AddAsync(batch, cancellationToken);
         var employees = _uow.Repository<Domain.Entities.Employee>().GetQueryable().Where(e => !e.IsDeleted && e.Status == Domain.Enums.EmployeeStatus.Active).ToList();

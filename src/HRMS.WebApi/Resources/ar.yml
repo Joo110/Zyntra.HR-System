@@ -1,0 +1,21 @@
+Employeealreadycheckedintoday: ŞÇã ÇáãæÙİ ÈÊÓÌíá ÇáæÕæá Çáíæã
+Attendancerecordnotfound: áã íÊã ÇáÚËæÑ Úáì ÓÌá ÇáÍÖæÑ
+Alreadycheckedout: Êã ÊÓÌíá ÇáÎÑæÌ ÈÇáİÚá
+EmailRequired: ÇáÈÑíÏ ÇáÅáßÊÑæäí ãØáæÈ 
+ValidEmailRequired: ÇáÈÑíÏ ÇáÅáßÊÑæäí ÇáÕÍíÍ ãØáæÈ
+PasswordRequired : ßáãÉ ÇáãÑæÑ ãØáæÈÉ
+PasswordMinLength: ÇáÍÏ ÇáÃÏäì áØæá ßáãÉ ÇáãÑæÑ
+Branchnotfound: áã íÊã ÇáÚËæÑ Úáì ÇáİÑÚ
+DepartmentCodeExists: ßæÏ ÇáŞÓã '{0}' ãæÌæÏ ÈÇáİÚá
+Departmentnotfound: áã íÊã ÇáÚËæÑ Úáì ÇáŞÓã '{0}'
+EmployeeEmailExists: ÇáãæÙİ ÈåĞÇ ÇáÈÑíÏ ÇáÅáßÊÑæäí '{0}' ãæÌæÏ ÈÇáİÚá.
+Employeemustbeatleast18yearsold: íÌÈ ÃáÇ íŞá ÚãÑ ÇáãæÙİ Úä 18 ÚÇãğÇ
+EmployeeNotFound: Employee '{0}' not found.
+Leaverequestnotfound: áã íÊã ÇáÚËæÑ Úáì ØáÈ ÇáÅÌÇÒÉ
+PayrollBatchAlreadyExists: íæÌÏ ÈÇáİÚá ãÓíÑ ÑæÇÊÈ áÔåÑ {0}/{1}.
+OnlyDraftPayrollBatchesCanBeDeleted: íãßä ÍĞİ ãÓíÑÇÊ ÇáÑæÇÊÈ İí ÍÇáÉ ÇáãÓæÏÉ İŞØ.
+PayrollBatchNotFound: áã íÊã ÇáÚËæÑ Úáì ãÓíÑ ÇáÑæÇÊÈ.
+PayslipNotFound: áã íÊã ÇáÚËæÑ Úáì ßÔİ ÇáãÑÊÈ.
+KPINotFound: áã íÊã ÇáÚËæÑ Úáì ãÄÔÑ ÇáÃÏÇÁ (KPI).
+PositionNotFound: áã íÊã ÇáÚËæÑ Úáì ÇáæÙíİÉ.
+JobVacancyNotFound: áã íÊã ÇáÚËæÑ Úáì æÙíİÉ ÔÇÛÑÉ.

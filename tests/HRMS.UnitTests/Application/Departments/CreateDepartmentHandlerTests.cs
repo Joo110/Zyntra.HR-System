@@ -1,9 +1,11 @@
 using AutoMapper;
+using FluentAssertions;
+using HRMS.Application.Common.Interfaces;
+using HRMS.Application.Common.Localization;
 using HRMS.Application.Modules.Departments.Commands.CreateDepartment;
 using HRMS.Application.Modules.Departments.Mappings;
-using HRMS.Application.Common.Interfaces;
 using HRMS.Domain.Entities;
-using FluentAssertions;
+using Microsoft.Extensions.Localization;
 using Moq;
 using Xunit;
 namespace HRMS.UnitTests.Application.Departments;
@@ -12,6 +14,7 @@ public class CreateDepartmentHandlerTests
     private readonly Mock<IUnitOfWork> _uowMock = new();
     private readonly Mock<IRepository<Department>> _repoMock = new();
     private readonly IMapper _mapper;
+    private IStringLocalizer<SharedResource> _localizer;
 
     public CreateDepartmentHandlerTests()
     {
@@ -26,7 +29,7 @@ public class CreateDepartmentHandlerTests
         _repoMock.Setup(r => r.AnyAsync(It.IsAny<System.Linq.Expressions.Expression<Func<Department, bool>>>(), It.IsAny<CancellationToken>())).ReturnsAsync(false);
         _repoMock.Setup(r => r.AddAsync(It.IsAny<Department>(), It.IsAny<CancellationToken>())).Returns(Task.CompletedTask);
         _uowMock.Setup(u => u.SaveChangesAsync(It.IsAny<CancellationToken>())).ReturnsAsync(1);
-        var handler = new CreateDepartmentCommandHandler(_uowMock.Object, _mapper);
+        var handler = new CreateDepartmentCommandHandler(_uowMock.Object, _mapper,_localizer);
         var result = await handler.Handle(new CreateDepartmentCommand("HR", "Human Resources", null, null, null), CancellationToken.None);
         result.IsSuccess.Should().BeTrue();
         result.Value.Should().NotBeNull();
@@ -37,7 +40,7 @@ public class CreateDepartmentHandlerTests
     public async Task Handle_ShouldReturnFailure_WhenDepartmentCodeExists()
     {
         _repoMock.Setup(r => r.AnyAsync(It.IsAny<System.Linq.Expressions.Expression<Func<Department, bool>>>(), It.IsAny<CancellationToken>())).ReturnsAsync(true);
-        var handler = new CreateDepartmentCommandHandler(_uowMock.Object, _mapper);
+        var handler = new CreateDepartmentCommandHandler(_uowMock.Object, _mapper, _localizer);
         var result = await handler.Handle(new CreateDepartmentCommand("HR", "Human Resources", null, null, null), CancellationToken.None);
         result.IsFailure.Should().BeTrue();
     }

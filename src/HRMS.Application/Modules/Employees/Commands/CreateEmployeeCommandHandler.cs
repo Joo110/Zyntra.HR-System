@@ -11,14 +11,20 @@ public class CreateEmployeeCommandHandler : IRequestHandler<CreateEmployeeComman
     private readonly IUnitOfWork _uow;
     private readonly IMapper _mapper;
     private readonly IAuditService _auditService;
+    private ILocalizationService _localizer;
 
-    public CreateEmployeeCommandHandler(IUnitOfWork uow, IMapper mapper, IAuditService auditService)
-    { _uow = uow; _mapper = mapper; _auditService = auditService; }
+    public CreateEmployeeCommandHandler(IUnitOfWork uow, IMapper mapper, IAuditService auditService, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper; _auditService = auditService;
+        _localizer = localizer;
+    }
 
     public async Task<Result<EmployeeDto>> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
     {
         var existing = await _uow.Repository<Employee>().AnyAsync(e => e.Email == request.Email && !e.IsDeleted, cancellationToken);
-        if (existing) return Result<EmployeeDto>.Failure($"Employee with email '{request.Email}' already exists.");
+        if (existing)
+            return Result<EmployeeDto>.Failure(
+                _localizer["EmployeeEmailExists", request.Email]);
 
         var employee = new Employee
         {

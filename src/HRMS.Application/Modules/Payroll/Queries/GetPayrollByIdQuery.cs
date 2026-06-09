@@ -4,11 +4,16 @@ public record GetPayrollByIdQuery(Guid Id) : IRequest<Result<PayrollBatchDto>>;
 public class GetPayrollByIdQueryHandler : IRequestHandler<GetPayrollByIdQuery, Result<PayrollBatchDto>>
 {
     private readonly IUnitOfWork _uow; private readonly IMapper _mapper;
-    public GetPayrollByIdQueryHandler(IUnitOfWork uow, IMapper mapper) { _uow = uow; _mapper = mapper; }
+    private ILocalizationService _localizer;
+    public GetPayrollByIdQueryHandler(IUnitOfWork uow, IMapper mapper, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper;
+        _localizer = localizer;
+    }
     public async Task<Result<PayrollBatchDto>> Handle(GetPayrollByIdQuery request, CancellationToken cancellationToken)
     {
         var b = await _uow.Repository<PayrollBatch>().GetByIdAsync(request.Id, cancellationToken);
-        if (b is null || b.IsDeleted) return Result<PayrollBatchDto>.Failure("Payroll batch not found.");
+        if (b is null || b.IsDeleted) return Result<PayrollBatchDto>.Failure(_localizer["PayrollBatchNotFound"]);
         return Result<PayrollBatchDto>.Success(_mapper.Map<PayrollBatchDto>(b));
     }
 }

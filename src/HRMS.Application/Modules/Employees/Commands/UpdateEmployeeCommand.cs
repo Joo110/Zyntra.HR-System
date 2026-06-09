@@ -20,14 +20,18 @@ public class UpdateEmployeeCommandHandler : IRequestHandler<UpdateEmployeeComman
     private readonly IUnitOfWork _uow;
     private readonly IMapper _mapper;
     private readonly IAuditService _auditService;
+    private ILocalizationService _localizer;
 
-    public UpdateEmployeeCommandHandler(IUnitOfWork uow, IMapper mapper, IAuditService auditService)
-    { _uow = uow; _mapper = mapper; _auditService = auditService; }
+    public UpdateEmployeeCommandHandler(IUnitOfWork uow, IMapper mapper, IAuditService auditService, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper; _auditService = auditService;
+        _localizer = localizer;
+    }
 
     public async Task<Result<EmployeeDto>> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
     {
         var employee = await _uow.Repository<Employee>().GetByIdAsync(request.Id, cancellationToken);
-        if (employee is null) return Result<EmployeeDto>.Failure($"Employee '{request.Id}' not found.");
+        if (employee is null) return Result<EmployeeDto>.Failure(_localizer["EmployeeNotFound", request.Id]);
 
         employee.FirstName = request.FirstName;
         employee.LastName = request.LastName;

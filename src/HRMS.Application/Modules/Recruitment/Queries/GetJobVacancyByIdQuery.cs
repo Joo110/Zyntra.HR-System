@@ -4,11 +4,16 @@ public record GetJobVacancyByIdQuery(Guid Id) : IRequest<Result<JobVacancyDto>>;
 public class GetJobVacancyByIdQueryHandler : IRequestHandler<GetJobVacancyByIdQuery, Result<JobVacancyDto>>
 {
     private readonly IUnitOfWork _uow; private readonly IMapper _mapper;
-    public GetJobVacancyByIdQueryHandler(IUnitOfWork uow, IMapper mapper) { _uow = uow; _mapper = mapper; }
+    private ILocalizationService _localizer;
+    public GetJobVacancyByIdQueryHandler(IUnitOfWork uow, IMapper mapper, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper;
+        _localizer = localizer;
+    }
     public async Task<Result<JobVacancyDto>> Handle(GetJobVacancyByIdQuery request, CancellationToken cancellationToken)
     {
         var j = await _uow.Repository<JobVacancy>().GetByIdAsync(request.Id, cancellationToken);
-        if (j is null || j.IsDeleted) return Result<JobVacancyDto>.Failure("Job vacancy not found.");
+        if (j is null || j.IsDeleted) return Result<JobVacancyDto>.Failure(_localizer["JobVacancyNotFound"]);
         return Result<JobVacancyDto>.Success(_mapper.Map<JobVacancyDto>(j));
     }
 }

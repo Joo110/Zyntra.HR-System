@@ -1,12 +1,17 @@
-using Serilog;
 using HRMS.Application;
+using HRMS.Application.Common.Interfaces;
 using HRMS.Infrastructure;
+using HRMS.Infrastructure.Identity;
+using HRMS.Infrastructure.Localization;
 using HRMS.Infrastructure.Persistence;
 using HRMS.Infrastructure.Persistence.Seeds;
-using HRMS.Infrastructure.Identity;
 using HRMS.WebApi.Extensions;
 using HRMS.WebApi.Middlewares;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Localization;
+using Serilog;
+using System.Globalization;
 
 Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateBootstrapLogger();
 
@@ -28,17 +33,35 @@ try
     builder.Services.AddCorsConfiguration(builder.Configuration);
     builder.Services.AddAuthorization();
 
+    builder.Services.AddLocalization();
+
+    builder.Services.AddScoped<ILocalizationService, LocalizationService>();
+
     var app = builder.Build();
 
     // Seed Database
     using (var scope = app.Services.CreateScope())
-    {
+    {   
         var context = scope.ServiceProvider.GetRequiredService<HrmsDbContext>();
         var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
         var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
         await context.Database.EnsureCreatedAsync();
         await DataSeeder.SeedAsync(context, userManager, roleManager);
     }
+
+
+    var supportedCultures = new[]
+{
+    new CultureInfo("en"),
+    new CultureInfo("ar")
+};
+
+    app.UseRequestLocalization(new RequestLocalizationOptions
+    {
+        DefaultRequestCulture = new RequestCulture("en"),
+        SupportedCultures = supportedCultures,
+        SupportedUICultures = supportedCultures
+    });
 
     // Middleware pipeline
     app.UseMiddleware<CorrelationIdMiddleware>();

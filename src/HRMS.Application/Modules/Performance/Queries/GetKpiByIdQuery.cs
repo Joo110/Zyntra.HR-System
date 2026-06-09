@@ -4,11 +4,16 @@ public record GetKpiByIdQuery(Guid Id) : IRequest<Result<KpiDto>>;
 public class GetKpiByIdQueryHandler : IRequestHandler<GetKpiByIdQuery, Result<KpiDto>>
 {
     private readonly IUnitOfWork _uow; private readonly IMapper _mapper;
-    public GetKpiByIdQueryHandler(IUnitOfWork uow, IMapper mapper) { _uow = uow; _mapper = mapper; }
+    private ILocalizationService _localizer;
+    public GetKpiByIdQueryHandler(IUnitOfWork uow, IMapper mapper, ILocalizationService localizer)
+    {
+        _uow = uow; _mapper = mapper;
+        _localizer = localizer;
+    }
     public async Task<Result<KpiDto>> Handle(GetKpiByIdQuery request, CancellationToken cancellationToken)
     {
         var kpi = await _uow.Repository<KPI>().GetByIdAsync(request.Id, cancellationToken);
-        if (kpi is null || kpi.IsDeleted) return Result<KpiDto>.Failure("KPI not found.");
+        if (kpi is null || kpi.IsDeleted) return Result<KpiDto>.Failure(_localizer["PayslipNotFound"]);
         return Result<KpiDto>.Success(_mapper.Map<KpiDto>(kpi));
     }
 }

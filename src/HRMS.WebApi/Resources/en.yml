@@ -1,0 +1,21 @@
+Employeealreadycheckedintoday: Employee already checked in today
+Attendancerecordnotfound: Attendance record not found
+Alreadycheckedout: Already checked out
+EmailRequired: Email Required
+ValidEmailRequired: Valid Email Required
+PasswordRequired: Password Required
+PasswordMinLength: Password Min Length
+Branchnotfound: Branch not found
+DepartmentCodeExists: Department code '{0}' already exists
+Departmentnotfound: Department '{0}' was not found
+EmployeeEmailExists: Employee with email '{0}' already exists.
+Employeemustbeatleast18yearsold: Employee must be at least 18 years old
+EmployeeNotFound: Employee '{0}' not found.
+Leaverequestnotfound: Leave request not found
+PayrollBatchAlreadyExists: Payroll batch for {0}/{1} already exists.
+OnlyDraftPayrollBatchesCanBeDeleted: Only draft payroll batches can be deleted.
+PayrollBatchNotFound: Payroll batch not found.
+PayslipNotFound: Payslip not found.
+KPINotFound: KPI not found.
+PositionNotFound: Position not found.
+JobVacancyNotFound: Job vacancy not found.

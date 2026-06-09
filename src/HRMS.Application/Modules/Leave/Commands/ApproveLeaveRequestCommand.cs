@@ -4,11 +4,16 @@ public record ApproveLeaveRequestCommand(Guid Id, bool IsApproved, string? Rejec
 public class ApproveLeaveRequestCommandHandler : IRequestHandler<ApproveLeaveRequestCommand, Result>
 {
     private readonly IUnitOfWork _uow;
-    public ApproveLeaveRequestCommandHandler(IUnitOfWork uow) { _uow = uow; }
+    private ILocalizationService _localizer;
+    public ApproveLeaveRequestCommandHandler(IUnitOfWork uow, ILocalizationService localizer)
+    {
+        _uow = uow;
+        _localizer = localizer;
+    }
     public async Task<Result> Handle(ApproveLeaveRequestCommand request, CancellationToken cancellationToken)
     {
         var leave = await _uow.Repository<LeaveRequest>().GetByIdAsync(request.Id, cancellationToken);
-        if (leave is null) return Result.Failure("Leave request not found.");
+        if (leave is null) return Result.Failure (_localizer["Leaverequestnotfound"]);
         leave.Status = request.IsApproved ? LeaveStatus.Approved : LeaveStatus.Rejected;
         leave.ApprovedBy = request.ApprovedBy; leave.ApprovedAt = DateTime.UtcNow; leave.RejectionReason = request.RejectionReason;
         _uow.Repository<LeaveRequest>().Update(leave);

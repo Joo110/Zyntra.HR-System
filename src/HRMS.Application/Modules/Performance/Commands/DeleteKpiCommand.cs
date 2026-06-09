@@ -4,11 +4,16 @@ public record DeleteKpiCommand(Guid Id) : IRequest<Result>;
 public class DeleteKpiCommandHandler : IRequestHandler<DeleteKpiCommand, Result>
 {
     private readonly IUnitOfWork _uow;
-    public DeleteKpiCommandHandler(IUnitOfWork uow) { _uow = uow; }
+    private ILocalizationService _localizer;
+    public DeleteKpiCommandHandler(IUnitOfWork uow, ILocalizationService localizer)
+    {
+        _uow = uow;
+        _localizer = localizer;
+    }
     public async Task<Result> Handle(DeleteKpiCommand request, CancellationToken cancellationToken)
     {
         var kpi = await _uow.Repository<KPI>().GetByIdAsync(request.Id, cancellationToken);
-        if (kpi is null) return Result.Failure("KPI not found.");
+        if (kpi is null) return Result.Failure(_localizer["KPINotFound"]);
         kpi.IsDeleted = true; kpi.DeletedAt = DateTime.UtcNow;
         _uow.Repository<KPI>().Update(kpi);
         await _uow.SaveChangesAsync(cancellationToken);
