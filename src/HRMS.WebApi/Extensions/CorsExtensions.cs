@@ -6,7 +6,7 @@ public static class CorsExtensions
         services.AddCors(options =>
         {
             options.AddPolicy("HRMSCorsPolicy", builder =>
-                builder.WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>() ?? new[] { "http://localhost:3000", "https://localhost:7001" })
+                builder.WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>() ?? new[] { "http://localhost:5173", "https://localhost:5173" })
                     .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
         });
         return services;
