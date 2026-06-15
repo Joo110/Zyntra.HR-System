@@ -1,0 +1,160 @@
+2026-06-10 00:00:24.235 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:00:24.242 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.6968 ms
+2026-06-10 00:00:24.247 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 4ms with status 204
+2026-06-10 00:00:39.996 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:00:39.999 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.6917 ms
+2026-06-10 00:00:40.003 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 4ms with status 204
+2026-06-10 00:00:43.042 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:00:43.048 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0879 ms
+2026-06-10 00:00:43.057 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 9ms with status 204
+2026-06-10 00:00:43.793 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:00:43.796 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.1092 ms
+2026-06-10 00:00:43.800 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 3ms with status 204
+2026-06-10 00:01:05.584 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:01:05.586 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0402 ms
+2026-06-10 00:01:05.587 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:01:06.384 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:01:06.386 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0506 ms
+2026-06-10 00:01:06.388 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 2ms with status 204
+2026-06-10 00:02:11.400 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:02:11.449 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:02:31.167 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.202 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.204 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.205 +03:00 [WRN] No store type was specified for the decimal property 'TargetValue' on entity type 'KPI'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.205 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.206 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.207 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryAllowance'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.208 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryDeduction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:31.210 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'SalaryStructure'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:02:32.145 +03:00 [INF] HRMS API starting on Development
+2026-06-10 00:02:33.116 +03:00 [INF] HTTP GET /index.html started
+2026-06-10 00:02:33.201 +03:00 [INF] HTTP GET /index.html completed in 81ms with status 200
+2026-06-10 00:02:33.229 +03:00 [INF] HTTP GET /index.js started
+2026-06-10 00:02:33.234 +03:00 [INF] HTTP GET /index.js completed in 2ms with status 200
+2026-06-10 00:02:33.354 +03:00 [INF] HTTP GET /swagger/v1/swagger.json started
+2026-06-10 00:02:33.410 +03:00 [INF] HTTP GET /swagger/v1/swagger.json completed in 54ms with status 200
+2026-06-10 00:02:47.868 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:02:47.999 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:02:50.582 +03:00 [WRN] Slow request: LoginCommand took 2565ms
+2026-06-10 00:02:50.584 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:02:50.608 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 2735.6508 ms
+2026-06-10 00:02:50.612 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 2743ms with status 200
+2026-06-10 00:03:04.730 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:03:04.732 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.5552 ms
+2026-06-10 00:03:04.733 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:03:05.552 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:03:05.555 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.4514 ms
+2026-06-10 00:03:05.556 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 2ms with status 204
+2026-06-10 00:07:17.918 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.963 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.965 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.966 +03:00 [WRN] No store type was specified for the decimal property 'TargetValue' on entity type 'KPI'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.967 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.969 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.970 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryAllowance'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.971 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryDeduction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:17.972 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'SalaryStructure'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:07:19.063 +03:00 [INF] HRMS API starting on Development
+2026-06-10 00:07:19.841 +03:00 [INF] HTTP GET /index.html started
+2026-06-10 00:07:19.918 +03:00 [INF] HTTP GET /index.html completed in 72ms with status 200
+2026-06-10 00:07:19.942 +03:00 [INF] HTTP GET /index.js started
+2026-06-10 00:07:19.947 +03:00 [INF] HTTP GET /index.js completed in 2ms with status 200
+2026-06-10 00:07:20.040 +03:00 [INF] HTTP GET /swagger/v1/swagger.json started
+2026-06-10 00:07:20.097 +03:00 [INF] HTTP GET /swagger/v1/swagger.json completed in 55ms with status 200
+2026-06-10 00:07:24.483 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:07:24.489 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 2.2404 ms
+2026-06-10 00:07:24.495 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 10ms with status 204
+2026-06-10 00:07:24.506 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:07:24.619 +03:00 [INF] Handling LoginCommand: {"Email":"amrsoliman124003@gmail.com","Password":"amrSOLIMANgada124003$$","$type":"LoginCommand"}
+2026-06-10 00:07:27.115 +03:00 [WRN] Slow request: LoginCommand took 2479ms
+2026-06-10 00:07:27.117 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:07:27.135 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 400 in 2627.1400 ms
+2026-06-10 00:07:27.136 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 2628ms with status 400
+2026-06-10 00:07:44.492 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:07:44.493 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.5263 ms
+2026-06-10 00:07:44.495 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:07:44.498 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:07:44.504 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:07:46.861 +03:00 [WRN] Slow request: LoginCommand took 2353ms
+2026-06-10 00:07:46.862 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:07:46.865 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 2366.3007 ms
+2026-06-10 00:07:46.868 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 2368ms with status 200
+2026-06-10 00:09:26.632 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:09:26.639 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:09:28.582 +03:00 [WRN] Slow request: LoginCommand took 1940ms
+2026-06-10 00:09:28.584 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:09:28.585 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 1951.7917 ms
+2026-06-10 00:09:28.587 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 1953ms with status 200
+2026-06-10 00:27:37.304 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.338 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.340 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.341 +03:00 [WRN] No store type was specified for the decimal property 'TargetValue' on entity type 'KPI'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.342 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.343 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.344 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryAllowance'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.345 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryDeduction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:37.345 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'SalaryStructure'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-10 00:27:38.288 +03:00 [INF] HRMS API starting on Development
+2026-06-10 00:27:39.293 +03:00 [INF] HTTP GET /index.html started
+2026-06-10 00:27:39.375 +03:00 [INF] HTTP GET /index.html completed in 78ms with status 200
+2026-06-10 00:27:39.395 +03:00 [INF] HTTP GET /index.js started
+2026-06-10 00:27:39.399 +03:00 [INF] HTTP GET /index.js completed in 2ms with status 200
+2026-06-10 00:27:39.485 +03:00 [INF] HTTP GET /swagger/v1/swagger.json started
+2026-06-10 00:27:39.539 +03:00 [INF] HTTP GET /swagger/v1/swagger.json completed in 52ms with status 200
+2026-06-10 00:27:58.227 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:27:58.372 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:28:00.530 +03:00 [WRN] Slow request: LoginCommand took 2135ms
+2026-06-10 00:28:00.531 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:28:00.554 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 2322.3133 ms
+2026-06-10 00:28:00.558 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 2329ms with status 200
+2026-06-10 00:28:26.802 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:28:26.805 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.9916 ms
+2026-06-10 00:28:26.806 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 2ms with status 204
+2026-06-10 00:28:26.810 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:28:26.815 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:28:28.980 +03:00 [WRN] Slow request: LoginCommand took 2163ms
+2026-06-10 00:28:28.982 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:28:28.983 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 2171.7503 ms
+2026-06-10 00:28:28.985 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 2173ms with status 200
+2026-06-10 00:30:03.223 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:30:03.225 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.2883 ms
+2026-06-10 00:30:03.226 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:30:03.229 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:30:03.234 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:30:05.115 +03:00 [WRN] Slow request: LoginCommand took 1879ms
+2026-06-10 00:30:05.117 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:30:05.117 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 1887.0385 ms
+2026-06-10 00:30:05.120 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 1889ms with status 200
+2026-06-10 00:31:35.780 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:31:35.782 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0816 ms
+2026-06-10 00:31:35.783 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:31:35.786 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:31:35.788 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:31:35.860 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:31:35.863 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 76.3028 ms
+2026-06-10 00:31:35.874 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 86ms with status 200
+2026-06-10 00:31:53.041 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:31:53.043 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0892 ms
+2026-06-10 00:31:53.045 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 2ms with status 204
+2026-06-10 00:31:53.048 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:31:53.050 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:31:53.116 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:31:53.117 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 67.9085 ms
+2026-06-10 00:31:53.119 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 69ms with status 200
+2026-06-10 00:33:55.319 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:33:55.320 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0581 ms
+2026-06-10 00:33:55.322 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:33:55.325 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:33:55.326 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:33:55.402 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:33:55.404 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 77.7020 ms
+2026-06-10 00:33:55.405 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 79ms with status 200
+2026-06-10 00:34:17.825 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-10 00:34:17.829 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.1050 ms
+2026-06-10 00:34:17.831 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-10 00:34:17.837 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-10 00:34:17.839 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-10 00:34:17.906 +03:00 [INF] Handled LoginCommand
+2026-06-10 00:34:17.907 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 69.0423 ms
+2026-06-10 00:34:17.909 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 70ms with status 200

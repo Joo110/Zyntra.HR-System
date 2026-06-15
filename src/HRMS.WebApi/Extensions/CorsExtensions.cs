@@ -5,9 +5,13 @@ public static class CorsExtensions
     {
         services.AddCors(options =>
         {
-            options.AddPolicy("HRMSCorsPolicy", builder =>
-                builder.WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>() ?? new[] { "http://localhost:3000", "https://localhost:7001" })
-                    .AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+            options.AddPolicy("HRMSCorsPolicy", policy =>
+            {
+                policy
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
         });
         return services;
     }

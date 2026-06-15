@@ -171,3 +171,64 @@ Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
    at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
    at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
    at Program.<Main>$(String[] args) in E:\Zyntra\HR\Backend\src\HRMS.WebApi\Program.cs:line 40
+2026-06-09 23:57:24.233 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.272 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.274 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.275 +03:00 [WRN] No store type was specified for the decimal property 'TargetValue' on entity type 'KPI'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.276 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.277 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.278 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryAllowance'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.279 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryDeduction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:24.281 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'SalaryStructure'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-09 23:57:25.860 +03:00 [INF] HRMS API starting on Development
+2026-06-09 23:57:26.951 +03:00 [INF] HTTP GET /index.html started
+2026-06-09 23:57:27.033 +03:00 [INF] HTTP GET /index.html completed in 76ms with status 200
+2026-06-09 23:57:27.051 +03:00 [INF] HTTP GET /index.js started
+2026-06-09 23:57:27.061 +03:00 [INF] HTTP GET /index.js completed in 7ms with status 200
+2026-06-09 23:57:27.169 +03:00 [INF] HTTP GET /swagger/v1/swagger.json started
+2026-06-09 23:57:27.229 +03:00 [INF] HTTP GET /swagger/v1/swagger.json completed in 57ms with status 200
+2026-06-09 23:59:00.935 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-09 23:59:02.501 +03:00 [INF] Handling LoginCommand: {"Email":"string","Password":"string","$type":"LoginCommand"}
+2026-06-09 23:59:07.925 +03:00 [ERR] HTTP POST /api/v1/Auth/login responded 500 in 6986.7479 ms
+FluentValidation.ValidationException: Validation failed: 
+ -- Email: ValidEmailRequired Severity: Error
+   at HRMS.Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Zyntra\HR\Backend\src\HRMS.Application\Common\Behaviors\ValidationBehavior.cs:line 15
+   at HRMS.Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Zyntra\HR\Backend\src\HRMS.Application\Common\Behaviors\LoggingBehavior.cs:line 14
+   at HRMS.WebApi.Controllers.V1.AuthController.Login(LoginCommand command, CancellationToken ct) in E:\Zyntra\HR\Backend\src\HRMS.WebApi\Controllers\V1\AuthController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-06-09 23:59:07.966 +03:00 [ERR] Unhandled exception: Validation failed: 
+ -- Email: ValidEmailRequired Severity: Error
+FluentValidation.ValidationException: Validation failed: 
+ -- Email: ValidEmailRequired Severity: Error
+   at HRMS.Application.Common.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Zyntra\HR\Backend\src\HRMS.Application\Common\Behaviors\ValidationBehavior.cs:line 15
+   at HRMS.Application.Common.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Zyntra\HR\Backend\src\HRMS.Application\Common\Behaviors\LoggingBehavior.cs:line 14
+   at HRMS.WebApi.Controllers.V1.AuthController.Login(LoginCommand command, CancellationToken ct) in E:\Zyntra\HR\Backend\src\HRMS.WebApi\Controllers\V1\AuthController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at HRMS.WebApi.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in E:\Zyntra\HR\Backend\src\HRMS.WebApi\Middlewares\GlobalExceptionMiddleware.cs:line 18
+2026-06-09 23:59:07.979 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 7042ms with status 500
