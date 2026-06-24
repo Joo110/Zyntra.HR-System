@@ -1,0 +1,21 @@
+2026-06-16 01:04:47.015 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-16 01:04:47.019 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.1134 ms
+2026-06-16 01:04:47.021 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 2ms with status 204
+2026-06-16 01:04:47.026 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-16 01:04:47.032 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-16 01:04:47.231 +03:00 [INF] Handled LoginCommand
+2026-06-16 01:04:47.234 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 204.3486 ms
+2026-06-16 01:04:47.236 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 206ms with status 200
+2026-06-16 01:05:16.901 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-16 01:05:16.906 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0393 ms
+2026-06-16 01:05:16.907 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-16 01:05:16.912 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-16 01:05:16.921 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-16 01:05:16.938 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-16 01:05:16.941 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 22.1199 ms
+2026-06-16 01:05:16.943 +03:00 [INF] HTTP GET /api/v1/Employees completed in 24ms with status 200
+2026-06-16 01:05:17.309 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-16 01:05:17.310 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-16 01:05:17.314 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-16 01:05:17.316 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 6.0448 ms
+2026-06-16 01:05:17.318 +03:00 [INF] HTTP GET /api/v1/Employees completed in 7ms with status 200

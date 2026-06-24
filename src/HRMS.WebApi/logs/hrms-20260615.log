@@ -1,0 +1,226 @@
+2026-06-15 22:52:03.231 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.279 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.281 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'JobVacancy'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.283 +03:00 [WRN] No store type was specified for the decimal property 'TargetValue' on entity type 'KPI'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.285 +03:00 [WRN] No store type was specified for the decimal property 'MaxSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.286 +03:00 [WRN] No store type was specified for the decimal property 'MinSalary' on entity type 'Position'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.288 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryAllowance'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.290 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'SalaryDeduction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:03.292 +03:00 [WRN] No store type was specified for the decimal property 'BasicSalary' on entity type 'SalaryStructure'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-15 22:52:06.739 +03:00 [INF] HRMS API starting on Development
+2026-06-15 22:52:08.534 +03:00 [INF] HTTP GET / started
+2026-06-15 22:52:08.549 +03:00 [INF] HTTP GET / completed in 9ms with status 301
+2026-06-15 22:52:08.590 +03:00 [INF] HTTP GET /index.html started
+2026-06-15 22:52:08.766 +03:00 [INF] HTTP GET /index.html completed in 172ms with status 200
+2026-06-15 22:52:08.798 +03:00 [INF] HTTP GET /swagger-ui-bundle.js started
+2026-06-15 22:52:08.798 +03:00 [INF] HTTP GET /index.css started
+2026-06-15 22:52:08.798 +03:00 [INF] HTTP GET /index.js started
+2026-06-15 22:52:08.799 +03:00 [INF] HTTP GET /swagger-ui.css started
+2026-06-15 22:52:08.799 +03:00 [INF] HTTP GET /swagger-ui-standalone-preset.js started
+2026-06-15 22:52:08.817 +03:00 [INF] HTTP GET /index.js completed in 4ms with status 200
+2026-06-15 22:52:08.866 +03:00 [INF] HTTP GET /index.css completed in 56ms with status 200
+2026-06-15 22:52:08.974 +03:00 [INF] HTTP GET /swagger-ui-standalone-preset.js completed in 107ms with status 200
+2026-06-15 22:52:08.974 +03:00 [INF] HTTP GET /swagger-ui.css completed in 154ms with status 200
+2026-06-15 22:52:09.053 +03:00 [INF] HTTP GET /swagger-ui-bundle.js completed in 247ms with status 200
+2026-06-15 22:52:10.049 +03:00 [INF] HTTP GET /swagger/v1/swagger.json started
+2026-06-15 22:52:10.168 +03:00 [INF] HTTP GET /swagger/v1/swagger.json completed in 116ms with status 200
+2026-06-15 22:52:21.668 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-15 22:52:21.681 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 5.3887 ms
+2026-06-15 22:52:21.687 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 17ms with status 204
+2026-06-15 22:52:21.703 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-15 22:52:23.578 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-15 22:52:23.826 +03:00 [INF] Handled LoginCommand
+2026-06-15 22:52:23.849 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 2144.2836 ms
+2026-06-15 22:52:23.852 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 2146ms with status 200
+2026-06-15 22:54:02.484 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-15 22:54:02.526 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.9327 ms
+2026-06-15 22:54:02.528 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 36ms with status 204
+2026-06-15 22:54:02.531 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-15 22:54:02.533 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-15 22:54:02.679 +03:00 [INF] Handled LoginCommand
+2026-06-15 22:54:02.681 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 148.9456 ms
+2026-06-15 22:54:02.682 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 150ms with status 200
+2026-06-15 22:56:02.903 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 22:56:02.904 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0542 ms
+2026-06-15 22:56:02.906 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-15 22:56:02.913 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 22:56:02.980 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 22:56:03.114 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-15 22:56:03.115 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-15 22:56:03.149 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 22:56:03.166 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 250.6323 ms
+2026-06-15 22:56:03.168 +03:00 [INF] HTTP GET /api/v1/Employees completed in 252ms with status 200
+2026-06-15 22:56:03.271 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 22:56:03.275 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 22:56:03.280 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 22:56:03.281 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 7.2141 ms
+2026-06-15 22:56:03.282 +03:00 [INF] HTTP GET /api/v1/Employees completed in 9ms with status 200
+2026-06-15 22:56:14.775 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-15 22:56:14.777 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.1791 ms
+2026-06-15 22:56:14.778 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-15 22:56:14.782 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-15 22:56:14.788 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-15 22:56:14.872 +03:00 [INF] Handled LoginCommand
+2026-06-15 22:56:14.874 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 90.1131 ms
+2026-06-15 22:56:14.876 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 91ms with status 200
+2026-06-15 22:58:39.266 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login started
+2026-06-15 22:58:39.273 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login responded 204 in 0.0909 ms
+2026-06-15 22:58:39.274 +03:00 [INF] HTTP OPTIONS /api/v1/Auth/login completed in 1ms with status 204
+2026-06-15 22:58:39.279 +03:00 [INF] HTTP POST /api/v1/Auth/login started
+2026-06-15 22:58:39.282 +03:00 [INF] Handling LoginCommand: {"Email":"admin@hrms.com","Password":"Admin@12345","$type":"LoginCommand"}
+2026-06-15 22:58:39.369 +03:00 [INF] Handled LoginCommand
+2026-06-15 22:58:39.370 +03:00 [INF] HTTP POST /api/v1/Auth/login responded 200 in 89.3271 ms
+2026-06-15 22:58:39.372 +03:00 [INF] HTTP POST /api/v1/Auth/login completed in 90ms with status 200
+2026-06-15 23:26:33.457 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:26:33.492 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0855 ms
+2026-06-15 23:26:33.493 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-15 23:26:33.497 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:26:33.503 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:26:33.539 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:26:33.540 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 40.9789 ms
+2026-06-15 23:26:33.541 +03:00 [INF] HTTP GET /api/v1/Employees completed in 42ms with status 200
+2026-06-15 23:26:33.831 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:26:33.833 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:26:33.837 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:26:33.837 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 5.1776 ms
+2026-06-15 23:26:33.839 +03:00 [INF] HTTP GET /api/v1/Employees completed in 6ms with status 200
+2026-06-15 23:26:43.467 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:26:43.469 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0782 ms
+2026-06-15 23:26:43.471 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 2ms with status 204
+2026-06-15 23:26:43.475 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:26:43.478 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:26:43.483 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:26:43.484 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 8.1344 ms
+2026-06-15 23:26:43.487 +03:00 [INF] HTTP GET /api/v1/Employees completed in 10ms with status 200
+2026-06-15 23:26:43.879 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:26:43.882 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:26:43.887 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:26:43.888 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 7.3835 ms
+2026-06-15 23:26:43.891 +03:00 [INF] HTTP GET /api/v1/Employees completed in 9ms with status 200
+2026-06-15 23:26:48.050 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:26:48.053 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:26:48.060 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:26:48.061 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 8.9877 ms
+2026-06-15 23:26:48.063 +03:00 [INF] HTTP GET /api/v1/Employees completed in 10ms with status 200
+2026-06-15 23:26:48.460 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:26:48.463 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:26:48.469 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:26:48.470 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 7.3037 ms
+2026-06-15 23:26:48.472 +03:00 [INF] HTTP GET /api/v1/Employees completed in 9ms with status 200
+2026-06-15 23:31:21.294 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:31:21.307 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.1820 ms
+2026-06-15 23:31:21.309 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 2ms with status 204
+2026-06-15 23:31:21.318 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:31:21.324 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:31:21.344 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:31:21.346 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 23.1341 ms
+2026-06-15 23:31:21.349 +03:00 [INF] HTTP GET /api/v1/Employees completed in 26ms with status 200
+2026-06-15 23:31:22.337 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:31:22.341 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:31:22.353 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:31:22.354 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 14.3273 ms
+2026-06-15 23:31:22.355 +03:00 [INF] HTTP GET /api/v1/Employees completed in 15ms with status 200
+2026-06-15 23:31:43.958 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:31:43.961 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.1805 ms
+2026-06-15 23:31:43.964 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 2ms with status 204
+2026-06-15 23:31:43.973 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:31:43.977 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:31:43.998 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:31:43.999 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 23.7330 ms
+2026-06-15 23:31:44.002 +03:00 [INF] HTTP GET /api/v1/Employees completed in 26ms with status 200
+2026-06-15 23:31:45.348 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:31:45.350 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:31:45.356 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:31:45.357 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 7.5299 ms
+2026-06-15 23:31:45.359 +03:00 [INF] HTTP GET /api/v1/Employees completed in 9ms with status 200
+2026-06-15 23:33:17.864 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:33:17.868 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.4440 ms
+2026-06-15 23:33:17.869 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 2ms with status 204
+2026-06-15 23:33:17.918 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:17.920 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:17.930 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:17.931 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 11.9196 ms
+2026-06-15 23:33:17.933 +03:00 [INF] HTTP GET /api/v1/Employees completed in 13ms with status 200
+2026-06-15 23:33:18.344 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:18.345 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:18.349 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:18.351 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 5.8298 ms
+2026-06-15 23:33:18.352 +03:00 [INF] HTTP GET /api/v1/Employees completed in 7ms with status 200
+2026-06-15 23:33:23.717 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:33:23.718 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0726 ms
+2026-06-15 23:33:23.719 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-15 23:33:23.726 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:23.730 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:23.735 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:23.737 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 8.6985 ms
+2026-06-15 23:33:23.739 +03:00 [INF] HTTP GET /api/v1/Employees completed in 11ms with status 200
+2026-06-15 23:33:24.350 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:24.353 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:24.364 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:24.365 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 12.9220 ms
+2026-06-15 23:33:24.366 +03:00 [INF] HTTP GET /api/v1/Employees completed in 14ms with status 200
+2026-06-15 23:33:32.731 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:33:32.733 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.1596 ms
+2026-06-15 23:33:32.736 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 2ms with status 204
+2026-06-15 23:33:32.744 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:32.747 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:32.763 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:32.764 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 17.8874 ms
+2026-06-15 23:33:32.765 +03:00 [INF] HTTP GET /api/v1/Employees completed in 19ms with status 200
+2026-06-15 23:33:33.335 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:33.337 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:33.346 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:33.347 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 10.6622 ms
+2026-06-15 23:33:33.349 +03:00 [INF] HTTP GET /api/v1/Employees completed in 12ms with status 200
+2026-06-15 23:33:37.741 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:37.743 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:37.755 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:37.756 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 13.8715 ms
+2026-06-15 23:33:37.758 +03:00 [INF] HTTP GET /api/v1/Employees completed in 15ms with status 200
+2026-06-15 23:33:38.337 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:33:38.339 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0596 ms
+2026-06-15 23:33:38.341 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-15 23:33:38.343 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:33:38.344 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:33:38.348 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:33:38.349 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 5.0054 ms
+2026-06-15 23:33:38.350 +03:00 [INF] HTTP GET /api/v1/Employees completed in 6ms with status 200
+2026-06-15 23:36:18.015 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:36:18.016 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0441 ms
+2026-06-15 23:36:18.018 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-15 23:36:18.021 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:36:18.023 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:36:18.031 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:36:18.032 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 9.5728 ms
+2026-06-15 23:36:18.034 +03:00 [INF] HTTP GET /api/v1/Employees completed in 11ms with status 200
+2026-06-15 23:36:18.337 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:36:18.339 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:36:18.343 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:36:18.344 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 5.5336 ms
+2026-06-15 23:36:18.345 +03:00 [INF] HTTP GET /api/v1/Employees completed in 6ms with status 200
+2026-06-15 23:36:39.700 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:36:39.708 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0799 ms
+2026-06-15 23:36:39.710 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 2ms with status 204
+2026-06-15 23:36:39.716 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:36:39.719 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:36:39.723 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:36:39.724 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 6.6068 ms
+2026-06-15 23:36:39.726 +03:00 [INF] HTTP GET /api/v1/Employees completed in 8ms with status 200
+2026-06-15 23:36:40.353 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:36:40.356 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:36:40.359 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:36:40.360 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 4.6892 ms
+2026-06-15 23:36:40.362 +03:00 [INF] HTTP GET /api/v1/Employees completed in 6ms with status 200
+2026-06-15 23:46:25.991 +03:00 [INF] HTTP OPTIONS /api/v1/Employees started
+2026-06-15 23:46:25.993 +03:00 [INF] HTTP OPTIONS /api/v1/Employees responded 204 in 0.0821 ms
+2026-06-15 23:46:25.994 +03:00 [INF] HTTP OPTIONS /api/v1/Employees completed in 1ms with status 204
+2026-06-15 23:46:25.998 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:46:26.000 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:46:26.018 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:46:26.020 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 20.2662 ms
+2026-06-15 23:46:26.021 +03:00 [INF] HTTP GET /api/v1/Employees completed in 21ms with status 200
+2026-06-15 23:46:26.341 +03:00 [INF] HTTP GET /api/v1/Employees started
+2026-06-15 23:46:26.342 +03:00 [INF] Handling GetAllEmployeesQuery: {"PageNumber":1,"PageSize":20,"SearchTerm":null,"$type":"GetAllEmployeesQuery"}
+2026-06-15 23:46:26.346 +03:00 [INF] Handled GetAllEmployeesQuery
+2026-06-15 23:46:26.347 +03:00 [INF] HTTP GET /api/v1/Employees responded 200 in 5.3344 ms
+2026-06-15 23:46:26.349 +03:00 [INF] HTTP GET /api/v1/Employees completed in 6ms with status 200
